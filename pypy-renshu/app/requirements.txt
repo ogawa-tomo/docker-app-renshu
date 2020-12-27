@@ -1,0 +1,4 @@
+cffi==1.14.3
+greenlet==0.4.13
+readline==6.2.4.1
+tqdm==4.55.0

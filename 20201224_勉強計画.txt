@@ -1,0 +1,25 @@
+やりたいこと
+
+nuxtの環境をローカルに構築 済
+nuxtの環境をdockerで構築 済
+
+fastapiの環境をローカルに構築 済
+fastapiの環境をdockerで構築 済
+
+ローカルのnuxtからローカルのfastapiを呼ぶ 済
+
+docker-composeでnuxtのdockerとfastapiのdockerを立ち上げる 済
+
+dockerのnuxtからdockerのfastapiを呼ぶ 済
+
+上記の構成をecs fargateで作る
+
+bootstrap vueを導入する
+
+frontendのページ構成を整える
+
+pipenv環境でpypyを使う方法を調べる
+
+fastapi環境でpypyを使う方法を調べる
+
+backendの構成を整える

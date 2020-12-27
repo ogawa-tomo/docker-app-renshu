@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  
+  frontend:
+    image: node
+    volumes:
+      - ./frontend/:/app
+    ports:
+        - 3000:3000
+    environment: 
+      - HOST=0.0.0.0
+      - BACKEND_URL=http://backend:8000
+    working_dir: /app
+    command: >
+      bash -c "npm install && npm run dev"
+    expose:
+      - 3000
+    depends_on: 
+      - backend
+  
+  backend:
+    image: python
+    volumes:
+      - ./backend/:/back
+    working_dir: /back
+    command: >
+      bash -c "pip install pipenv && pipenv install && pipenv run uvicorn intro:app --reload --host 0.0.0.0"
+    ports:
+      - 8000:8000
+    expose:
+      - 8000
+    
